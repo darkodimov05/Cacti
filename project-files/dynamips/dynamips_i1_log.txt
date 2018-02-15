@@ -1,0 +1,19 @@
+Apr 24 08:37:04.676 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 24 08:37:04.691 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 30826.
+Apr 24 08:37:04.957 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 24 08:37:04.988 HYPERVISOR: exec_cmd: hypervisor working_dir D:\FINKI\Upravuvanje so Mrezhi\Proekt\Cacti\project-files\dynamips 
+Apr 24 08:37:05.441 GENERAL: working_dir=D:\FINKI\Upravuvanje so Mrezhi\Proekt\Cacti\project-files\dynamips
+Apr 24 08:37:05.441 HYPERVISOR: exec_cmd: ethsw create SW1 
+Apr 24 08:37:06.320 HYPERVISOR: exec_cmd: nio create_udp udp-7c7aca85-2eb5-44cb-adbe-93f2d94e6533 10001 127.0.0.1 10000 
+Apr 24 08:37:06.383 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-7c7aca85-2eb5-44cb-adbe-93f2d94e6533 
+Apr 24 08:37:06.445 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-7c7aca85-2eb5-44cb-adbe-93f2d94e6533 1 
+Apr 24 08:37:06.898 HYPERVISOR: exec_cmd: nio create_udp udp-5b6f2e53-1814-4d8c-a9de-9f528883ad0e 10003 127.0.0.1 10002 
+Apr 24 08:37:06.929 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-5b6f2e53-1814-4d8c-a9de-9f528883ad0e 
+Apr 24 08:37:06.976 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-5b6f2e53-1814-4d8c-a9de-9f528883ad0e 1 
+Apr 24 08:37:07.492 HYPERVISOR: exec_cmd: nio create_udp udp-fe9ba367-ebf6-4d76-9694-36cfcaf7d491 10006 127.0.0.1 10007 
+Apr 24 08:37:07.523 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-fe9ba367-ebf6-4d76-9694-36cfcaf7d491 
+Apr 24 08:37:07.570 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-fe9ba367-ebf6-4d76-9694-36cfcaf7d491 1 
+Apr 24 09:29:51.227 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Apr 24 09:29:51.313 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 24 09:29:51.560 HYPERVISOR: Stopped.
+Apr 24 09:29:51.609 GENERAL: reset done.

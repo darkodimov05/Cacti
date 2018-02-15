@@ -1,0 +1,65 @@
+Apr 24 08:37:04.676 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 24 08:37:04.691 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 30828.
+Apr 24 08:37:05.051 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 24 08:37:05.066 HYPERVISOR: exec_cmd: hypervisor working_dir D:\FINKI\Upravuvanje so Mrezhi\Proekt\Cacti\project-files\dynamips 
+Apr 24 08:37:05.676 GENERAL: working_dir=D:\FINKI\Upravuvanje so Mrezhi\Proekt\Cacti\project-files\dynamips
+Apr 24 08:37:05.691 HYPERVISOR: exec_cmd: vm create DHCP 2 c7200 
+Apr 24 08:37:05.738 VM: VM DHCP created.
+Apr 24 08:37:05.754 HYPERVISOR: exec_cmd: vm set_con_tcp_port DHCP 5003 
+Apr 24 08:37:05.770 HYPERVISOR: exec_cmd: c7200 get_mac_addr DHCP 
+Apr 24 08:37:05.801 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:05.816 HYPERVISOR: exec_cmd: vm slot_add_binding DHCP 0 0 C7200-IO-FE 
+Apr 24 08:37:05.848 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:05.879 HYPERVISOR: exec_cmd: vm slot_add_binding DHCP 1 0 PA-A1 
+Apr 24 08:37:05.910 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:05.941 HYPERVISOR: exec_cmd: vm slot_add_binding DHCP 5 0 PA-8T 
+Apr 24 08:37:05.973 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:05.988 HYPERVISOR: exec_cmd: vm slot_add_binding DHCP 4 0 PA-4T+ 
+Apr 24 08:37:06.035 HYPERVISOR: exec_cmd: vm set_disk0 DHCP 0 
+Apr 24 08:37:06.066 HYPERVISOR: exec_cmd: vm set_ram DHCP 512 
+Apr 24 08:37:06.145 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:06.176 HYPERVISOR: exec_cmd: vm slot_add_binding DHCP 6 0 PA-POS-OC3 
+Apr 24 08:37:06.207 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:06.266 HYPERVISOR: exec_cmd: vm set_idle_pc DHCP 0x608724c0 
+Apr 24 08:37:06.320 HYPERVISOR: exec_cmd: vm set_nvram DHCP 512 
+Apr 24 08:37:06.383 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:06.429 HYPERVISOR: exec_cmd: vm slot_add_binding DHCP 2 0 PA-FE-TX 
+Apr 24 08:37:06.476 HYPERVISOR: exec_cmd: vm set_exec_area DHCP 64 
+Apr 24 08:37:06.523 HYPERVISOR: exec_cmd: c7200 set_mac_addr DHCP ca02.2390.0000 
+Apr 24 08:37:06.539 HYPERVISOR: exec_cmd: vm set_ios DHCP C:/Users/User/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Apr 24 08:37:06.539 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:06.554 HYPERVISOR: exec_cmd: vm slot_add_binding DHCP 3 0 PA-GE 
+Apr 24 08:37:06.570 HYPERVISOR: exec_cmd: vm set_config DHCP configs/i2_startup-config.cfg 
+Apr 24 08:37:06.633 HYPERVISOR: exec_cmd: vm set_config DHCP configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Apr 24 08:37:06.883 HYPERVISOR: exec_cmd: nio create_udp udp-c450e072-2249-40ee-be40-4c86e5cdb253 10002 127.0.0.1 10003 
+Apr 24 08:37:06.929 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DHCP 2 0 udp-c450e072-2249-40ee-be40-4c86e5cdb253 
+Apr 24 08:37:06.961 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:18.458 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Apr 24 08:37:18.489 VM: VM Ghost created.
+Apr 24 08:37:18.505 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/User/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Apr 24 08:37:18.536 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 24 08:37:18.583 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-jk9s-mz.124-13b.image-512.ghost 
+Apr 24 08:37:18.614 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Apr 24 08:37:18.630 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 24 08:37:18.784 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 24 08:37:20.284 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 24 08:37:20.315 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 24 08:37:20.565 VM: VM Ghost shutdown.
+Apr 24 08:37:20.581 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 24 08:37:20.581 VM: VM Ghost destroyed.
+Apr 24 08:37:20.596 HYPERVISOR: exec_cmd: vm set_ghost_status DHCP 2 
+Apr 24 08:37:20.612 HYPERVISOR: exec_cmd: vm set_ghost_file DHCP c7200-jk9s-mz.124-13b.image-512.ghost 
+Apr 24 08:37:20.627 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 08:37:20.659 HYPERVISOR: exec_cmd: vm start DHCP 
+Apr 24 09:28:29.491 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 09:28:29.632 HYPERVISOR: exec_cmd: vm stop DHCP 
+Apr 24 09:28:29.950 VM: VM DHCP shutdown.
+Apr 24 09:28:30.153 HYPERVISOR: exec_cmd: vm extract_config DHCP 
+Apr 24 09:29:51.220 HYPERVISOR: exec_cmd: vm extract_config DHCP 
+Apr 24 09:29:51.788 HYPERVISOR: exec_cmd: vm get_status DHCP 
+Apr 24 09:29:51.826 HYPERVISOR: exec_cmd: vm extract_config DHCP 
+Apr 24 09:29:51.861 HYPERVISOR: exec_cmd: vm delete DHCP 
+Apr 24 09:29:51.861 VM: VM DHCP destroyed.
+Apr 24 09:29:51.897 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 24 09:29:52.236 HYPERVISOR: Stopped.
+Apr 24 09:29:52.236 GENERAL: reset done.

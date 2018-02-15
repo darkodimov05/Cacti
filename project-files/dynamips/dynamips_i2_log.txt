@@ -1,0 +1,54 @@
+Apr 24 08:37:04.676 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 24 08:37:04.691 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 30827.
+Apr 24 08:37:05.019 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 24 08:37:05.051 HYPERVISOR: exec_cmd: hypervisor working_dir D:\FINKI\Upravuvanje so Mrezhi\Proekt\Cacti\project-files\dynamips 
+Apr 24 08:37:05.535 GENERAL: working_dir=D:\FINKI\Upravuvanje so Mrezhi\Proekt\Cacti\project-files\dynamips
+Apr 24 08:37:05.535 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Apr 24 08:37:05.551 VM: VM R1 created.
+Apr 24 08:37:05.582 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5002 
+Apr 24 08:37:05.598 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Apr 24 08:37:05.613 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:05.629 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Apr 24 08:37:05.629 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:05.645 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-A1 
+Apr 24 08:37:05.660 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:05.660 HYPERVISOR: exec_cmd: vm slot_add_binding R1 5 0 PA-8T 
+Apr 24 08:37:05.676 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:05.691 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 PA-4T+ 
+Apr 24 08:37:05.707 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Apr 24 08:37:05.723 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Apr 24 08:37:05.738 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:05.754 HYPERVISOR: exec_cmd: vm slot_add_binding R1 6 0 PA-POS-OC3 
+Apr 24 08:37:05.770 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:05.785 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x608724c0 
+Apr 24 08:37:05.816 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Apr 24 08:37:05.848 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:05.863 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-FE-TX 
+Apr 24 08:37:05.910 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Apr 24 08:37:05.941 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.130c.0000 
+Apr 24 08:37:05.973 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/User/GNS3/images/IOS/c7200-jk9s-mz.124-13b.image 
+Apr 24 08:37:05.988 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:06.035 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 PA-GE 
+Apr 24 08:37:06.066 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Apr 24 08:37:06.304 HYPERVISOR: exec_cmd: nio create_udp udp-8610c7db-779b-4ba7-8a55-180bcdec579e 10000 127.0.0.1 10001 
+Apr 24 08:37:06.367 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 2 0 udp-8610c7db-779b-4ba7-8a55-180bcdec579e 
+Apr 24 08:37:06.414 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:07.289 HYPERVISOR: exec_cmd: nio create_udp udp-021447f5-9fec-462c-9c0a-925d0973cc12 10004 127.0.0.1 10005 
+Apr 24 08:37:07.320 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-021447f5-9fec-462c-9c0a-925d0973cc12 
+Apr 24 08:37:07.320 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:20.643 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Apr 24 08:37:20.674 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c7200-jk9s-mz.124-13b.image-512.ghost 
+Apr 24 08:37:20.690 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 08:37:20.706 HYPERVISOR: exec_cmd: vm start R1 
+Apr 24 09:28:29.525 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 09:28:29.652 HYPERVISOR: exec_cmd: vm stop R1 
+Apr 24 09:28:29.895 VM: VM R1 shutdown.
+Apr 24 09:28:29.913 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 24 09:29:51.189 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 24 09:29:51.799 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 24 09:29:51.834 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 24 09:29:51.870 HYPERVISOR: exec_cmd: vm delete R1 
+Apr 24 09:29:51.870 VM: VM R1 destroyed.
+Apr 24 09:29:51.916 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 24 09:29:52.075 HYPERVISOR: Stopped.
+Apr 24 09:29:52.075 GENERAL: reset done.
