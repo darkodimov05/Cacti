@@ -1,7 +1,7 @@
 # Cacti
 Network Monitoring Tool Cacti.
 
-Monitor network traffic with Cacti
+Monitor network traffic with Cacti.
 This Project is in GNS3 software.
 
 Cacti is an open source network graphing application that uses RRDTool – a data logging and graphing system for time series data.
